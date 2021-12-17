@@ -342,6 +342,24 @@ border-color: var(--text-decoration-color);
     width: 50%;
   }
 
+  .git:before {
+    content: "100%";
+    position: absolute;
+    font-size: 11px;
+    height: 10px;
+    width: 20px;
+    left: 40%;
+    top: 2px;
+    animation: write 2.8s;
+  }
+     
+  .git {
+    animation: bar 2.8s;
+    height: 25px;
+    background-color: #abc;
+    width: 100%;
+  }
+
   @keyframes bar {
     0% {
       width: 0%;
