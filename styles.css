@@ -6,14 +6,14 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.5;
+    line-height: 1.5; 
 
     --primary-text-color: #181820;
     --secondary-text-color: #5c5c62;
     --durability-text-color: #6a737d9c;
     --icon-color: #6a737d;
-    --border-color: #ff9a0045;
-    --text-decoration-color: #ff9a00;
+    --border-color: #35333045;
+    --text-decoration-color: #6b6967;
 }
 
 .container {
@@ -70,14 +70,13 @@ body {
 
 .contact-info__header,
 .contact-info__sub-header {
-text-align: center;
+text-align: left;
 }
 
 .contact-info__header {
 color: var(--primary-text-color);
-margin-bottom: 15px;
+margin-bottom: 5px;
 text-decoration-color: var(--text-decoration-color);
-text-decoration-line: underline;
 }
 
 .contact-info__sub-header {
@@ -88,7 +87,7 @@ margin-bottom: 30px;
 .contact-info__block {
 display: flex;
 flex-direction: column;
-justify-content: space-between;
+justify-content: center;
 }
 
 .contact-info__block--center {
@@ -108,6 +107,7 @@ margin-bottom: 20px;
 
 .contact-info__item-icon-wrapper {
 margin-right: 10px;
+margin-top: 2px;
 width: 20px;
 display: flex;
 justify-content: center;
@@ -124,8 +124,8 @@ vertical-align: text-bottom;
 
 .contact-info__avatar {
 border-radius: 50%;
-width: 100px;
-height: 100px;
+width: 200px;
+height: 200px;
 object-fit: cover;
 border: 3px solid;
 border-color: var(--text-decoration-color);
@@ -260,4 +260,144 @@ border-color: var(--text-decoration-color);
 
 .additional-info__languages-item {
     color: var(--secondary-text-color);
+}
+
+.bar {
+    border: 1px solid;
+    width: 45%;
+    position: relative;
+    background:#ffffff;
+    margin-bottom:10px;
+    border-radius:4px;
+    box-shadow:0px 0px 3px ;
+  }  
+  .bar div{
+    box-shadow:0px 0px 3px ;
+    border-radius:3px;
+  }
+  .html:before {
+    content: "90%";
+    position: absolute;
+    font-size: 11px;
+    height: 10px;
+    width: 20px;
+    left: 75%;
+    top: 2px;
+    animation: write 2.8s;
+  }
+  .css:before {
+    content: "90%";
+    position: absolute;
+    font-size: 11px;
+    height: 10px;
+    width: 20px;
+    left: 75%;
+    top: 2px;
+    animation: write 2.8s;
+  }
+  .js:before {
+    content: "70%";
+    position: absolute;
+    font-size: 11px;
+    height: 10px;
+    width: 20px;
+    left: 58%;
+    top: 2px;
+    animation: write 2.8s;
+  }
+  .html {
+    animation: bar 2.8s;
+    height: 25px;
+    background-color: #abc;
+    width: 90%;
+  }
+  .css {
+    animation: bar 2.8s;
+    height: 25px;
+    background-color: #abc;
+    width: 90%;
+  }
+  .js {
+    animation: bar 2.8s;
+    height: 25px;
+    background-color: #abc;
+    width: 70%;
+  }
+
+  .sql:before {
+    content: "50%";
+    position: absolute;
+    font-size: 11px;
+    height: 10px;
+    width: 20px;
+    left: 35%;
+    top: 2px;
+    animation: write 2.8s;
+  }
+     
+  .sql {
+    animation: bar 2.8s;
+    height: 25px;
+    background-color: #abc;
+    width: 50%;
+  }
+
+  .git:before {
+    content: "100%";
+    position: absolute;
+    font-size: 11px;
+    height: 10px;
+    width: 20px;
+    left: 40%;
+    top: 2px;
+    animation: write 2.8s;
+  }
+     
+  .git {
+    animation: bar 2.8s;
+    height: 25px;
+    background-color: #abc;
+    width: 100%;
+  }
+
+  @keyframes bar {
+    0% {
+      width: 0%;
+    }
+  }
+      
+  @keyframes write {
+    0% {
+      content: "0%";
+       left:0;
+    }
+    20% {
+      content: "15%";
+       
+    }
+    40% {
+      content: "30%";
+    }
+    60% {
+      content: "45%";
+    }
+    80% {
+      content: "60%";
+    }
+    100% {
+      content: "70%";
+    }
+  }
+
+.bold{
+font-weight: 700;
+}
+
+.main__block {
+    display: flex;
+    justify-content: center;
+}
+
+.block{
+    flex: 1 1 auto;
 }
