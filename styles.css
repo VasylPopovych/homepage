@@ -261,3 +261,125 @@ border-color: var(--text-decoration-color);
 .additional-info__languages-item {
     color: var(--secondary-text-color);
 }
+
+.bar {
+    border: 1px solid;
+    width: 45%;
+    position: relative;
+    background:#ffffff;
+    margin-bottom:10px;
+    border-radius:4px;
+    box-shadow:0px 0px 3px ;
+  }  
+  .bar div{
+    box-shadow:0px 0px 3px ;
+    border-radius:3px;
+  }
+  .html:before {
+    content: "90%";
+    position: absolute;
+    font-size: 11px;
+    height: 10px;
+    width: 20px;
+    left: 75%;
+    top: 2px;
+    animation: write 2.8s;
+  }
+  .css:before {
+    content: "90%";
+    position: absolute;
+    font-size: 11px;
+    height: 10px;
+    width: 20px;
+    left: 75%;
+    top: 2px;
+    animation: write 2.8s;
+  }
+  .js:before {
+    content: "70%";
+    position: absolute;
+    font-size: 11px;
+    height: 10px;
+    width: 20px;
+    left: 58%;
+    top: 2px;
+    animation: write 2.8s;
+  }
+  .html {
+    animation: bar 2.8s;
+    height: 25px;
+    background-color: #abc;
+    width: 90%;
+  }
+  .css {
+    animation: bar 2.8s;
+    height: 25px;
+    background-color: #abc;
+    width: 90%;
+  }
+  .js {
+    animation: bar 2.8s;
+    height: 25px;
+    background-color: #abc;
+    width: 70%;
+  }
+
+  .sql:before {
+    content: "50%";
+    position: absolute;
+    font-size: 11px;
+    height: 10px;
+    width: 20px;
+    left: 35%;
+    top: 2px;
+    animation: write 2.8s;
+  }
+     
+  .sql {
+    animation: bar 2.8s;
+    height: 25px;
+    background-color: #abc;
+    width: 50%;
+  }
+
+  @keyframes bar {
+    0% {
+      width: 0%;
+    }
+  }
+      
+  @keyframes write {
+    0% {
+      content: "0%";
+       left:0;
+    }
+    20% {
+      content: "15%";
+       
+    }
+    40% {
+      content: "30%";
+    }
+    60% {
+      content: "45%";
+    }
+    80% {
+      content: "60%";
+    }
+    100% {
+      content: "70%";
+    }
+  }
+
+.bold{
+font-weight: 700;
+}
+
+.main__block {
+    display: flex;
+    justify-content: center;
+}
+
+.block{
+    flex: 1 1 auto;
+}
