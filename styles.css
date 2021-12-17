@@ -270,12 +270,12 @@ border-color: var(--text-decoration-color);
     margin-bottom:10px;
     border-radius:4px;
     box-shadow:0px 0px 3px ;
-  }  
-  .bar div{
+}  
+.bar div{
     box-shadow:0px 0px 3px ;
     border-radius:3px;
-  }
-  .html:before {
+}
+.html:before {
     content: "90%";
     position: absolute;
     font-size: 11px;
@@ -284,8 +284,8 @@ border-color: var(--text-decoration-color);
     left: 75%;
     top: 2px;
     animation: write 2.8s;
-  }
-  .css:before {
+}
+.css:before {
     content: "90%";
     position: absolute;
     font-size: 11px;
@@ -294,8 +294,8 @@ border-color: var(--text-decoration-color);
     left: 75%;
     top: 2px;
     animation: write 2.8s;
-  }
-  .js:before {
+}
+.js:before {
     content: "70%";
     position: absolute;
     font-size: 11px;
@@ -304,27 +304,27 @@ border-color: var(--text-decoration-color);
     left: 58%;
     top: 2px;
     animation: write 2.8s;
-  }
-  .html {
+}
+.html {
     animation: bar 2.8s;
     height: 25px;
     background-color: #abc;
     width: 90%;
-  }
-  .css {
+}
+.css {
     animation: bar 2.8s;
     height: 25px;
     background-color: #abc;
     width: 90%;
-  }
-  .js {
+}
+.js {
     animation: bar 2.8s;
     height: 25px;
     background-color: #abc;
     width: 70%;
-  }
+}
 
-  .sql:before {
+.sql:before {
     content: "50%";
     position: absolute;
     font-size: 11px;
@@ -333,16 +333,16 @@ border-color: var(--text-decoration-color);
     left: 35%;
     top: 2px;
     animation: write 2.8s;
-  }
-     
-  .sql {
+}
+    
+.sql {
     animation: bar 2.8s;
     height: 25px;
     background-color: #abc;
     width: 50%;
-  }
+}
 
-  .git:before {
+.git:before {
     content: "100%";
     position: absolute;
     font-size: 11px;
@@ -351,43 +351,43 @@ border-color: var(--text-decoration-color);
     left: 40%;
     top: 2px;
     animation: write 2.8s;
-  }
-     
-  .git {
+}
+    
+.git {
     animation: bar 2.8s;
     height: 25px;
     background-color: #abc;
     width: 100%;
-  }
+}
 
-  @keyframes bar {
+@keyframes bar {
     0% {
-      width: 0%;
+    width: 0%;
     }
-  }
-      
-  @keyframes write {
+}
+
+@keyframes write {
     0% {
-      content: "0%";
-       left:0;
+    content: "0%";
+    left:0;
     }
     20% {
-      content: "15%";
-       
+    content: "15%";
+    
     }
     40% {
-      content: "30%";
+    content: "30%";
     }
     60% {
-      content: "45%";
+    content: "45%";
     }
     80% {
-      content: "60%";
+    content: "60%";
     }
     100% {
-      content: "70%";
+    content: "70%";
     }
-  }
+}
 
 .bold{
 font-weight: 700;
